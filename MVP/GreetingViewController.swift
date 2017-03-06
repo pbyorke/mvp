@@ -19,10 +19,19 @@ class GreetingViewController : UIViewController, GreetingView {
         bttn.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         return bttn
     }()
+    private let transferButton: UIButton = {
+        let bttn = UIButton()
+        bttn.setTitle("Transfer", for: .normal)
+        bttn.setTitleColor(.blue, for: .normal)
+        bttn.translatesAutoresizingMaskIntoConstraints = false
+        bttn.addTarget(self, action: #selector(transfer), for: .touchUpInside)
+        return bttn
+    }()
     private let greetingLabel: UILabel = {
         let lab = UILabel()
         lab.translatesAutoresizingMaskIntoConstraints = false
         lab.backgroundColor = .green
+        lab.text = "Hello, World!"
         return lab
     }()
     
@@ -33,6 +42,10 @@ class GreetingViewController : UIViewController, GreetingView {
     
     func didTapButton(button: UIButton) {
         presenter.showGreeting()
+    }
+    
+    func transfer(button: UIButton) {
+        GreetingRouter.sharedInstance.goToScene2(nav: navigationController!)
     }
     
     func setGreeting(greeting: String) {
@@ -50,7 +63,11 @@ class GreetingViewController : UIViewController, GreetingView {
         
         view.addSubview(greetingLabel)
         greetingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        greetingLabel.topAnchor.constraint(equalTo: showGreetingButton.bottomAnchor, constant: 40).isActive = true
+        greetingLabel.topAnchor.constraint(equalTo: showGreetingButton.bottomAnchor, constant: 20).isActive = true
+        
+        view.addSubview(transferButton)
+        greetingLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        greetingLabel.topAnchor.constraint(equalTo: greetingLabel.bottomAnchor, constant: 20).isActive = true
     }
     
 }
