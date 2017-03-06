@@ -7,37 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C1B46D851E677FBF00ADF96D /* GreetingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B46D841E677FBF00ADF96D /* GreetingRouter.swift */; };
-		C1B46D871E67802400ADF96D /* Scene2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B46D861E67802400ADF96D /* Scene2View.swift */; };
-		C1B46D891E67805100ADF96D /* Scene2ViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B46D881E67805100ADF96D /* Scene2ViewPresenter.swift */; };
-		C1B46D8B1E6780A100ADF96D /* Scene2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B46D8A1E6780A100ADF96D /* Scene2Presenter.swift */; };
-		C1B46D8D1E67811700ADF96D /* Scene2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B46D8C1E67811700ADF96D /* Scene2ViewController.swift */; };
 		C1B9762E1E6751CB009F9092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B9762D1E6751CB009F9092 /* AppDelegate.swift */; };
 		C1B976351E6751CB009F9092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1B976341E6751CB009F9092 /* Assets.xcassets */; };
 		C1B976381E6751CB009F9092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1B976361E6751CB009F9092 /* LaunchScreen.storyboard */; };
 		C1B976401E6768FC009F9092 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B9763F1E6768FC009F9092 /* Person.swift */; };
-		C1B976421E676943009F9092 /* GreetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B976411E676943009F9092 /* GreetingView.swift */; };
-		C1B976461E676985009F9092 /* GreetingViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B976451E676985009F9092 /* GreetingViewPresenter.swift */; };
-		C1B976481E6769AA009F9092 /* GreetingPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B976471E6769AA009F9092 /* GreetingPresenter.swift */; };
-		C1B9764A1E6769F1009F9092 /* GreetingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B976491E6769F1009F9092 /* GreetingViewController.swift */; };
+		C1E6888A1E6DFD4100A9F153 /* PersonRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E688891E6DFD4100A9F153 /* PersonRouterProtocol.swift */; };
+		C1E6888C1E6DFD6400A9F153 /* PersonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6888B1E6DFD6300A9F153 /* PersonRouter.swift */; };
+		C1E6888E1E6DFDA900A9F153 /* PersonViewPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6888D1E6DFDA900A9F153 /* PersonViewPresenterProtocol.swift */; };
+		C1E688901E6DFDD800A9F153 /* PersonViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E6888F1E6DFDD800A9F153 /* PersonViewPresenter.swift */; };
+		C1E688921E6DFEA200A9F153 /* PersonViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E688911E6DFEA200A9F153 /* PersonViewControllerProtocol.swift */; };
+		C1E688941E6DFEDA00A9F153 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E688931E6DFEDA00A9F153 /* PersonViewController.swift */; };
+		C1E688961E6E01B800A9F153 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E688951E6E01B800A9F153 /* Interactor.swift */; };
+		C1E688991E6E123400A9F153 /* InteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1E688981E6E123400A9F153 /* InteractorProtocol.swift */; };
+		C1ECB8561E6DD0F200F9C27C /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECB8551E6DD0F200F9C27C /* LoginRouter.swift */; };
+		C1ECB8581E6DD10D00F9C27C /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECB8571E6DD10D00F9C27C /* LoginViewControllerProtocol.swift */; };
+		C1ECB85A1E6DD13300F9C27C /* LoginViewPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECB8591E6DD13300F9C27C /* LoginViewPresenterProtocol.swift */; };
+		C1ECB85C1E6DD14C00F9C27C /* LoginViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECB85B1E6DD14C00F9C27C /* LoginViewPresenter.swift */; };
+		C1ECB85E1E6DD6CF00F9C27C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECB85D1E6DD6CF00F9C27C /* LoginViewController.swift */; };
+		C1ECB8601E6DF65700F9C27C /* LoginRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1ECB85F1E6DF65700F9C27C /* LoginRouterProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C1B46D841E677FBF00ADF96D /* GreetingRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingRouter.swift; sourceTree = "<group>"; };
-		C1B46D861E67802400ADF96D /* Scene2View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene2View.swift; sourceTree = "<group>"; };
-		C1B46D881E67805100ADF96D /* Scene2ViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene2ViewPresenter.swift; sourceTree = "<group>"; };
-		C1B46D8A1E6780A100ADF96D /* Scene2Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene2Presenter.swift; sourceTree = "<group>"; };
-		C1B46D8C1E67811700ADF96D /* Scene2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scene2ViewController.swift; sourceTree = "<group>"; };
 		C1B9762A1E6751CB009F9092 /* MVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1B9762D1E6751CB009F9092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1B976341E6751CB009F9092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C1B976371E6751CB009F9092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1B976391E6751CB009F9092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1B9763F1E6768FC009F9092 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		C1B976411E676943009F9092 /* GreetingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingView.swift; sourceTree = "<group>"; };
-		C1B976451E676985009F9092 /* GreetingViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewPresenter.swift; sourceTree = "<group>"; };
-		C1B976471E6769AA009F9092 /* GreetingPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingPresenter.swift; sourceTree = "<group>"; };
-		C1B976491E6769F1009F9092 /* GreetingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewController.swift; sourceTree = "<group>"; };
+		C1E688891E6DFD4100A9F153 /* PersonRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRouterProtocol.swift; sourceTree = "<group>"; };
+		C1E6888B1E6DFD6300A9F153 /* PersonRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonRouter.swift; sourceTree = "<group>"; };
+		C1E6888D1E6DFDA900A9F153 /* PersonViewPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewPresenterProtocol.swift; sourceTree = "<group>"; };
+		C1E6888F1E6DFDD800A9F153 /* PersonViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewPresenter.swift; sourceTree = "<group>"; };
+		C1E688911E6DFEA200A9F153 /* PersonViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewControllerProtocol.swift; sourceTree = "<group>"; };
+		C1E688931E6DFEDA00A9F153 /* PersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
+		C1E688951E6E01B800A9F153 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		C1E688981E6E123400A9F153 /* InteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorProtocol.swift; sourceTree = "<group>"; };
+		C1ECB8551E6DD0F200F9C27C /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		C1ECB8571E6DD10D00F9C27C /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
+		C1ECB8591E6DD13300F9C27C /* LoginViewPresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewPresenterProtocol.swift; sourceTree = "<group>"; };
+		C1ECB85B1E6DD14C00F9C27C /* LoginViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewPresenter.swift; sourceTree = "<group>"; };
+		C1ECB85D1E6DD6CF00F9C27C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C1ECB85F1E6DF65700F9C27C /* LoginRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,22 +61,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C15E61B21E677AD3007CE3F6 /* Greeting */ = {
-			isa = PBXGroup;
-			children = (
-				C1B46D841E677FBF00ADF96D /* GreetingRouter.swift */,
-				C1B976411E676943009F9092 /* GreetingView.swift */,
-				C1B976451E676985009F9092 /* GreetingViewPresenter.swift */,
-				C1B976471E6769AA009F9092 /* GreetingPresenter.swift */,
-				C1B976491E6769F1009F9092 /* GreetingViewController.swift */,
-				C1B46D861E67802400ADF96D /* Scene2View.swift */,
-				C1B46D881E67805100ADF96D /* Scene2ViewPresenter.swift */,
-				C1B46D8A1E6780A100ADF96D /* Scene2Presenter.swift */,
-				C1B46D8C1E67811700ADF96D /* Scene2ViewController.swift */,
-			);
-			name = Greeting;
-			sourceTree = "<group>";
-		};
 		C1B976211E6751CB009F9092 = {
 			isa = PBXGroup;
 			children = (
@@ -87,13 +81,50 @@
 			isa = PBXGroup;
 			children = (
 				C1B9762D1E6751CB009F9092 /* AppDelegate.swift */,
-				C1B9763F1E6768FC009F9092 /* Person.swift */,
-				C15E61B21E677AD3007CE3F6 /* Greeting */,
+				C1E688981E6E123400A9F153 /* InteractorProtocol.swift */,
+				C1E688951E6E01B800A9F153 /* Interactor.swift */,
+				C1ECB84C1E6DBE5700F9C27C /* Login */,
+				C1E688881E6DFC0700A9F153 /* Person */,
+				C1E688971E6E023500A9F153 /* Model */,
 				C1B976341E6751CB009F9092 /* Assets.xcassets */,
 				C1B976361E6751CB009F9092 /* LaunchScreen.storyboard */,
 				C1B976391E6751CB009F9092 /* Info.plist */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		C1E688881E6DFC0700A9F153 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				C1E688891E6DFD4100A9F153 /* PersonRouterProtocol.swift */,
+				C1E6888B1E6DFD6300A9F153 /* PersonRouter.swift */,
+				C1E6888D1E6DFDA900A9F153 /* PersonViewPresenterProtocol.swift */,
+				C1E6888F1E6DFDD800A9F153 /* PersonViewPresenter.swift */,
+				C1E688911E6DFEA200A9F153 /* PersonViewControllerProtocol.swift */,
+				C1E688931E6DFEDA00A9F153 /* PersonViewController.swift */,
+			);
+			name = Person;
+			sourceTree = "<group>";
+		};
+		C1E688971E6E023500A9F153 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1B9763F1E6768FC009F9092 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C1ECB84C1E6DBE5700F9C27C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C1ECB85F1E6DF65700F9C27C /* LoginRouterProtocol.swift */,
+				C1ECB8551E6DD0F200F9C27C /* LoginRouter.swift */,
+				C1ECB8591E6DD13300F9C27C /* LoginViewPresenterProtocol.swift */,
+				C1ECB85B1E6DD14C00F9C27C /* LoginViewPresenter.swift */,
+				C1ECB8571E6DD10D00F9C27C /* LoginViewControllerProtocol.swift */,
+				C1ECB85D1E6DD6CF00F9C27C /* LoginViewController.swift */,
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,17 +199,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1E688991E6E123400A9F153 /* InteractorProtocol.swift in Sources */,
+				C1ECB8601E6DF65700F9C27C /* LoginRouterProtocol.swift in Sources */,
 				C1B976401E6768FC009F9092 /* Person.swift in Sources */,
-				C1B9764A1E6769F1009F9092 /* GreetingViewController.swift in Sources */,
-				C1B46D891E67805100ADF96D /* Scene2ViewPresenter.swift in Sources */,
-				C1B976481E6769AA009F9092 /* GreetingPresenter.swift in Sources */,
-				C1B976421E676943009F9092 /* GreetingView.swift in Sources */,
-				C1B976461E676985009F9092 /* GreetingViewPresenter.swift in Sources */,
-				C1B46D8B1E6780A100ADF96D /* Scene2Presenter.swift in Sources */,
-				C1B46D851E677FBF00ADF96D /* GreetingRouter.swift in Sources */,
-				C1B46D8D1E67811700ADF96D /* Scene2ViewController.swift in Sources */,
-				C1B46D871E67802400ADF96D /* Scene2View.swift in Sources */,
+				C1ECB8561E6DD0F200F9C27C /* LoginRouter.swift in Sources */,
+				C1E6888A1E6DFD4100A9F153 /* PersonRouterProtocol.swift in Sources */,
+				C1ECB85C1E6DD14C00F9C27C /* LoginViewPresenter.swift in Sources */,
+				C1E6888C1E6DFD6400A9F153 /* PersonRouter.swift in Sources */,
+				C1E688901E6DFDD800A9F153 /* PersonViewPresenter.swift in Sources */,
+				C1ECB8581E6DD10D00F9C27C /* LoginViewControllerProtocol.swift in Sources */,
+				C1E6888E1E6DFDA900A9F153 /* PersonViewPresenterProtocol.swift in Sources */,
+				C1E688921E6DFEA200A9F153 /* PersonViewControllerProtocol.swift in Sources */,
+				C1ECB85E1E6DD6CF00F9C27C /* LoginViewController.swift in Sources */,
 				C1B9762E1E6751CB009F9092 /* AppDelegate.swift in Sources */,
+				C1E688961E6E01B800A9F153 /* Interactor.swift in Sources */,
+				C1ECB85A1E6DD13300F9C27C /* LoginViewPresenterProtocol.swift in Sources */,
+				C1E688941E6DFEDA00A9F153 /* PersonViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

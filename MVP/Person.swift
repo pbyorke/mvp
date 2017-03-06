@@ -8,7 +8,7 @@
 
 struct Person {
     
-    var firstName: String
-    var lastName: String
+    public var name: String
+    public var password: String
     
 }
