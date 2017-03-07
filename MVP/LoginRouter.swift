@@ -8,6 +8,16 @@
 
 import Foundation
 
+// MARK: - LoginRouterProtocol protocol
+
+protocol LoginRouterProtocol {
+    
+    func goToPersonScreen(_ person: Person)
+    
+}
+
+// MARK: - LoginRouter class
+
 class LoginRouter {
     
     let viewController = LoginViewController()
@@ -21,7 +31,7 @@ class LoginRouter {
     
 }
 
-// MARK: - LoginRouterProtocol
+// MARK: - LoginRouterProtocol extension
 
 extension LoginRouter: LoginRouterProtocol {
     

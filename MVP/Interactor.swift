@@ -8,13 +8,23 @@
 
 import Foundation
 
+// MARK: - InteractorProtocol protocol
+
+protocol InteractorProtocol {
+    
+    func makeAPerson(_ name: String, _ password: String) -> Person
+    
+}
+
+// MARK: - Interactor class
+
 class Interactor {
     
     static let sharedInstance = Interactor()
     
 }
 
-// MARK: - InteractorProtocol
+// MARK: - InteractorProtocol extension
 
 extension Interactor: InteractorProtocol {
 

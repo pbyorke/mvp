@@ -8,6 +8,13 @@
 
 import UIKit
 
+// MARK: - PersonViewControllerProtocol protocol
+
+protocol PersonViewControllerProtocol: class {
+}
+
+// MARK: - PersonViewController class
+
 class PersonViewController: UIViewController {
     
     var person: Person?
@@ -46,7 +53,7 @@ class PersonViewController: UIViewController {
     
 }
 
-// MARK: - PersonViewControllerProtocol
+// MARK: - PersonViewControllerProtocol extension
 
 extension PersonViewController: PersonViewControllerProtocol {}
 

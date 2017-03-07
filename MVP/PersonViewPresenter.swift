@@ -8,12 +8,19 @@
 
 import Foundation
 
+// MARK: - PersonViewPresenterProtocol protocol
+
+protocol PersonViewPresenterProtocol {
+}
+
+// MARK: - PersonViewPresenter class
+
 class PersonViewPresenter {
     
     var controller: PersonViewController!
     
 }
 
-// MARK: - PersonViewPresenterProtocol
+// MARK: - PersonViewPresenterProtocol extension
 
 extension PersonViewPresenter: PersonViewPresenterProtocol {}

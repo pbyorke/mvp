@@ -8,6 +8,16 @@
 
 import UIKit
 
+// MARK: - LoginViewControllerProtocol protocol
+
+protocol LoginViewControllerProtocol: class {
+    
+    func displayError(_ error: String)
+    
+}
+
+// MARK: - LoginViewController class
+
 class LoginViewController: UIViewController {
     
     var presenter : LoginViewPresenter!
@@ -61,15 +71,14 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        print("LoginViewController.navigationController = \(navigationController)")
-        
         prepareUI()
     }
     
     // MARK: - Button targets
     
     func didTapButton() {
+        nameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
         presenter.didTapButton(nameField.text!, passwordField.text!)
     }
     
@@ -113,7 +122,7 @@ class LoginViewController: UIViewController {
 
 }
 
-// MARK: - LoginViewControllerProtocol
+// MARK: - LoginViewControllerProtocol extension
 
 extension LoginViewController: LoginViewControllerProtocol {
     
@@ -123,7 +132,7 @@ extension LoginViewController: LoginViewControllerProtocol {
     
 }
 
-// MARK: UITextFieldDelegate
+// MARK: UITextFieldDelegate extension
 
 extension LoginViewController: UITextFieldDelegate {
     

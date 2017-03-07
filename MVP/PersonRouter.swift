@@ -8,6 +8,13 @@
 
 import Foundation
 
+// MARK: - PersonRouterProtocol protocol
+
+protocol PersonRouterProtocol {
+}
+
+// MARK: - PersonRouter class
+
 class PersonRouter {
     
     let viewController = PersonViewController()
@@ -21,6 +28,6 @@ class PersonRouter {
     
 }
 
-// MARK: - PersonRouterProtocol
+// MARK: - PersonRouterProtocol extensioin
 
 extension PersonRouter: PersonRouterProtocol {}

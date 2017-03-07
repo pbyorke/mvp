@@ -8,13 +8,23 @@
 
 import UIKit
 
+// MARK: - LoginViewPresenterProtocol protocol
+
+protocol LoginViewPresenterProtocol {
+    
+    func didTapButton(_ name: String, _ password: String)
+    
+}
+
+// MARK: - LoginViewPresenter class
+
 class LoginViewPresenter {
 
     var controller: LoginViewController!
 
 }
 
-// MARK: - LoginViewPresenterProtocol
+// MARK: - LoginViewPresenterProtocol extension
 
 extension LoginViewPresenter: LoginViewPresenterProtocol {
     
