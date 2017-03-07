@@ -1,5 +1,5 @@
 //
-//  LoginRouter.swift
+//  LoginNavigationHandler.swift
 //  MVP
 //
 //  Created by Peter Yorke on 3/6/17.
@@ -8,21 +8,20 @@
 
 import Foundation
 
-// MARK: - LoginRouterProtocol protocol
+// MARK: - LoginNavigationHandlerProtocol protocol
 
-protocol LoginRouterProtocol {
+protocol LoginNavigationHandlerProtocol {
     
     func goToPersonScreen(_ person: Person)
     
 }
 
-// MARK: - LoginRouter class
+// MARK: - LoginNavigationHandler class
 
-class LoginRouter {
+class LoginNavigationHandler {
     
     let viewController = LoginViewController()
     private let presenter = LoginViewPresenter()
-    static let sharedInstance = LoginRouter()
 
     init() {
         viewController.presenter = self.presenter
@@ -31,12 +30,12 @@ class LoginRouter {
     
 }
 
-// MARK: - LoginRouterProtocol extension
+// MARK: - LoginNavigationHandlerProtocol extension
 
-extension LoginRouter: LoginRouterProtocol {
+extension LoginNavigationHandler: LoginNavigationHandlerProtocol {
     
     func goToPersonScreen(_ person: Person) {
-        let controller = PersonRouter.sharedInstance.viewController
+        let controller = PersonNavigationHandler().viewController
         controller.person = person
         if let nav = viewController.navigationController {
             nav.pushViewController(controller, animated: true)

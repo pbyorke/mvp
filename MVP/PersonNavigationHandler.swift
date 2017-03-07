@@ -1,5 +1,5 @@
 //
-//  PersonRouter.swift
+//  PersonNavigationHandler.swift
 //  MVP
 //
 //  Created by Peter Yorke on 3/6/17.
@@ -8,18 +8,17 @@
 
 import Foundation
 
-// MARK: - PersonRouterProtocol protocol
+// MARK: - PersonNavigationHandlerProtocol protocol
 
-protocol PersonRouterProtocol {
+protocol PersonNavigationHandlerProtocol {
 }
 
-// MARK: - PersonRouter class
+// MARK: - PersonNavigationHandler class
 
-class PersonRouter {
+class PersonNavigationHandler {
     
     let viewController = PersonViewController()
     private let presenter = PersonViewPresenter()
-    static let sharedInstance = PersonRouter()
     
     init() {
         viewController.presenter = self.presenter
@@ -28,6 +27,6 @@ class PersonRouter {
     
 }
 
-// MARK: - PersonRouterProtocol extensioin
+// MARK: - PersonNavigationHandlerProtocol extensioin
 
-extension PersonRouter: PersonRouterProtocol {}
+extension PersonNavigationHandler: PersonNavigationHandlerProtocol {}

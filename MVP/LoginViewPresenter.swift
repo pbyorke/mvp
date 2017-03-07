@@ -33,7 +33,7 @@ extension LoginViewPresenter: LoginViewPresenterProtocol {
             controller.displayError("Name and Password must not be blank")
             
         } else if name == password {
-            LoginRouter.sharedInstance.goToPersonScreen(Interactor.sharedInstance.makeAPerson(name, password))
+            LoginNavigationHandler().goToPersonScreen(LoginInteractor().makeAPerson(name, password))
         } else {
             controller.displayError("Bad Name/Password")
         }
